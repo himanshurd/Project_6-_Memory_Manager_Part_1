@@ -63,8 +63,10 @@ void print_data(void)
 }
 
 int main(void) {
-     void *p, *q, *r;
-  p = myalloc(16); print_data();
-  q = myalloc(32); print_data();
-  r = myalloc(64); print_data();
+  void *p;
+    print_data();
+    p = myalloc(16);
+    print_data();
+    p = myalloc(16);
+    printf("%p\n", p);
 }
